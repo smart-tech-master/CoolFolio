@@ -1,6 +1,9 @@
 import avatar from "./assets/img/avatar.jpg";
 
 export default {
+  theme: {
+    color: "brew",
+  },
   me: {
     firstName: "Jareer",
     lastName: "Abdullah",
