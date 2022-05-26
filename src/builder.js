@@ -7,13 +7,18 @@ const ProjectDescription =
 
 export default {
   theme: {
-    color: "brew",
+    color: "valencia",
   },
   me: {
     firstName: "Jareer",
     lastName: "Abdullah",
     about: "I'm a full-stack Javascript, Typescript, PHP and Lua developer.",
-    avatar: avatar,
+    avatar: {
+      rotateOnHover: true,
+      scaleOnHover: true,
+      glowOnHover: true,
+      src: avatar,
+    },
     age: 14,
     projects: [
       {
@@ -48,6 +53,7 @@ export default {
   gallery: {
     data: [
       {
+        rotateOnHover: true,
         image: SquareImage,
       },
       {

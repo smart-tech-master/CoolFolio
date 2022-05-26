@@ -27,7 +27,12 @@ export default {
         } `"
       >
         <div :class="`w-full h-full flex flex-wrap`">
-          <img :src="picture.image" :class="`rounded w-full object-cover`" />
+          <img
+            :src="picture.image"
+            :class="`${
+              picture.rotateOnHover ? `hover:rotate-3` : ``
+            } rounded w-full object-cover`"
+          />
         </div>
       </div>
     </div>

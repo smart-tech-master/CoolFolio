@@ -14,8 +14,12 @@ export default {
   <main class="grid-cols-3 gap-5 p-5 grid">
     <div class="w-full p-5" v-if="Settings.me.avatar">
       <img
-        :src="Settings.me.avatar"
-        class="duration-300 opacity-60 hover:scale-105 hover:rounded hover:opacity-100 cursor-pointer w-full transition-all bg-bray-300"
+        :src="Settings.me.avatar.src"
+        :class="`${Settings.me.avatar.rotateOnHover ? `hover:rotate-3` : ``} ${
+          Settings.me.avatar.scaleOnHover ? `hover:scale-105` : ``
+        } ${
+          Settings.me.avatar.glowOnHover ? `hover:opacity-100` : ``
+        } duration-300 opacity-60 hover:rounded cursor-pointer w-full transition-all bg-bray-300`"
       />
     </div>
     <div class="p-5 px-1 col-span-2">
