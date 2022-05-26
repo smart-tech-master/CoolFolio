@@ -11,11 +11,11 @@ export default {
 };
 </script>
 <template>
-  <main class="h-screen grid-cols-3 gap-5 p-5 grid">
+  <main class="grid-cols-3 gap-5 p-5 grid">
     <div class="w-full p-5" v-if="Settings.me.avatar">
       <img
         :src="Settings.me.avatar"
-        class="duration-300 opacity-60 hover:scale-105 hover:rounded hover:opacity-100 cursor-pointer w-full transition-all bg-bray-400"
+        class="duration-300 opacity-60 hover:scale-105 hover:rounded hover:opacity-100 cursor-pointer w-full transition-all bg-bray-300"
       />
     </div>
     <div class="p-5 px-1 col-span-2">
@@ -29,19 +29,17 @@ export default {
         <p v-if="Settings.me.about" class="text-2xl">{{ Settings.me.about }}</p>
       </div>
       <div v-if="Settings.navBox" class="mt-4 mr-5">
-        <div
-          class="gap-5 grid grid-cols-2"
-          v-for="box in Settings.navBox.boxes"
-          :key="box"
-        >
-          <a :href="box.url" class="group cursor-pointer">
+        <div class="gap-5 grid grid-cols-2">
+          <a
+            :href="box.url"
+            class="group cursor-pointer"
+            v-for="box in Settings.navBox.boxes"
+            :key="box"
+          >
             <div
               :class="`bg-bray-400 duration-300 transition group-hover:text-white group-hover:bg-${localStorage.color} p-5 rounded group`"
             >
-              <h2
-                :class="`flex space-x-2`"
-                v-html="`${box.icon} <span class=''> ${box.name}</span>`"
-              ></h2>
+              <h2 :class="`flex space-x-2`" v-html="box.name"></h2>
             </div>
           </a>
         </div>

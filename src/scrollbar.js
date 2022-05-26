@@ -14,6 +14,9 @@ function ScrollBar() {
 ::-webkit-scrollbar-thumb {
     background-color: #${colors[localStorage.color]};
 }
+::-webkit-scrollbar {
+    background-color: #191926;
+}
 `;
   document.head.appendChild(tag);
 }
