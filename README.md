@@ -28,7 +28,7 @@ npm run build
 
 ## Themes
 
-The portfolio comes with 5 prebuilt themes.
+The portfolio comes with 5 prebuilt themes. Change the `theme` option in `/src/builder.js` to change the website theme. To change/edit these themes open `./tailwinds.config.js` and edit the heximal codes from there and run `npm run css` to rebuild the css once css is compiled build the app for production again(shown above).
 
 - `brew` - DodgerBlue
 - `royal` - Orange
