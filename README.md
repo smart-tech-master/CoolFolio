@@ -25,3 +25,13 @@ nano ./src/builder.js
 ## Build for Production
 npm run build
 ```
+
+## Themes
+
+The portfolio comes with 5 prebuilt themes.
+
+- `brew` - DodgerBlue
+- `royal` - Orange
+- `emerald` - Green
+- `amethyst` - Pink
+- `valencia` - Red
