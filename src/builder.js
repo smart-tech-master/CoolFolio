@@ -1,13 +1,17 @@
+/* Imports */
 import avatar from "./assets/img/avatar.jpg";
 import SquareImage from "./assets/img/square.png";
+/* Imports */
 
 /* Variables */
 const ProjectDescription =
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempus venenatis elit, vitae eleifend felis elementum ut. Nam arcu turpis, volutpat non laoreet a, fermentum eget diam. In hac habitasse.";
+/* Variables */
 
+/* Config */
 export default {
   theme: {
-    color: "valencia",
+    color: "royal",
   },
   me: {
     firstName: "Jareer",
@@ -97,3 +101,4 @@ export default {
     },
   },
 };
+/* Config */
