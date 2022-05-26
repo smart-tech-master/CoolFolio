@@ -1,6 +1,6 @@
 # Portfolio
 
-Create portfolio with JSON.
+🚀 A Prebuilt portfolio website for developers and online creators made with Javascript and Vue.js can be modified with JSON.
 
 ## Preview
 
