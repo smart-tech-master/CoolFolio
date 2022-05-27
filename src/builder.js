@@ -1,5 +1,6 @@
 /* Imports */
 import avatar from "./assets/img/avatar.jpg";
+import ConvHat from "./assets/svgs/conv-hat.svg";
 import SquareImage from "./assets/img/square.png";
 /* Imports */
 
@@ -10,6 +11,9 @@ const ProjectDescription =
 
 /* Config */
 export default {
+  website: {
+    title: "Jareer's Portfolio",
+  },
   theme: {
     color: "royal",
   },
@@ -85,12 +89,13 @@ export default {
   navBox: {
     boxes: [
       {
+        icon: ConvHat,
         url: "/#education",
-        name: "#My Projects",
+        name: "My Projects",
       },
       {
         url: "/#socials",
-        name: "#Socials",
+        name: "Socials",
       },
     ],
   },

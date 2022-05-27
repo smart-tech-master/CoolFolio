@@ -21,7 +21,7 @@ export default {
 };
 </script>
 <template>
-  <main class="bg-bray-500 p-5">
+  <main class="bg-bray-500 p-5" v-if="Settings.socials.github">
     <div>
       <h1 class="mt-10 text-5xl text-center font-bold">
         My Github

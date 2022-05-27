@@ -11,7 +11,7 @@ export default {
 };
 </script>
 <template>
-  <main class="bg-bray-500 p-5">
+  <main class="bg-bray-500 p-5" v-if="(Settings.me || {}).projects">
     <div>
       <h1 class="mt-10 text-5xl text-center font-bold">
         <span :class="`text-${localStorage.color}`">Projects</span> I've <br />

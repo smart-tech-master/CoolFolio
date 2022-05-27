@@ -11,7 +11,7 @@ export default {
 };
 </script>
 <template>
-  <main class="grid-cols-3 gap-5 p-5 grid">
+  <main class="grid-cols-3 gap-5 p-5 grid" v-if="Settings.me">
     <div class="w-full p-5" v-if="Settings.me.avatar">
       <img
         :src="Settings.me.avatar.src"
@@ -43,7 +43,17 @@ export default {
             <div
               :class="`bg-bray-400 duration-300 transition group-hover:text-white group-hover:bg-${localStorage.color} p-5 rounded group`"
             >
-              <h2 :class="`flex space-x-2`" v-html="box.name"></h2>
+              <h2 :class="`flex space-x-2`">
+                <span>
+                  <object
+                    v-if="box.icon"
+                    type="text/html"
+                    class="text-gray-300 h-6"
+                    :data="box.icon"
+                  ></object>
+                </span>
+                <span>{{ box.name }}</span>
+              </h2>
             </div>
           </a>
         </div>
