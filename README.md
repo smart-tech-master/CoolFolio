@@ -2,6 +2,8 @@
 
 🚀 A Prebuilt portfolio website for developers and online creators made with Javascript and Vue.js can be modified with JSON.
 
+[![DigitalOcean Referral Badge](https://web-platforms.sfo2.digitaloceanspaces.com/WWW/Badge%203.svg)](https://www.digitalocean.com/?refcode=5d09deecbc5d&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge)
+
 ![Image](DELETEME/preview.png)
 
 ## Installation
